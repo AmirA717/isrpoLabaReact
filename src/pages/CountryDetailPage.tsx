@@ -12,7 +12,8 @@ interface Country {
 }
 
 const CountryDetailPage = () => {
-  const { name } = useParams<{ name: string }>();
+    const { name: encodedName } = useParams<{ name: string }>();
+    const name = encodedName ? decodeURIComponent(encodedName) : "";    
   const [country, setCountry] = useState<Country | null>(null);
   const navigate = useNavigate();
 

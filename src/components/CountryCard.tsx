@@ -27,7 +27,7 @@ const CountryCard: React.FC<CountryCardProps> = ({ country, onRemove }) => {
 
   return (
     <div className="country-card">
-      <Link to={`/countryDetailPage/${country.name.common}`} className="country-card__link">
+      <Link to={`/countryDetailPage/${encodeURIComponent(country.name.common)}`} className="country-card__link">
         <img src={country.flags.png} alt={country.name.common} className="country-card__flag" />
         <p className="country-card__name">{country.name.common}</p>
       </Link>
