@@ -1,0 +1,44 @@
+.favorites-page {
+    padding: 20px;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .favorite-item {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 150px;
+  }
+  
+  .favorite-item__flag {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .favorite-item__name {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .favorite-item button {
+    padding: 5px 10px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .favorite-item button:hover {
+    background: darkred;
+  }
+  

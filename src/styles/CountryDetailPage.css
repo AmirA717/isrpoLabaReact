@@ -1,0 +1,51 @@
+.country-detail {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .back-button {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #ff4d4d;
+  }
+  
+  .country-detail__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .country-detail__flag {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .country-detail__info {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .country-detail {
+      padding: 15px;
+    }
+  
+    .country-detail__title {
+      font-size: 24px;
+    }
+  }
+  
